@@ -252,25 +252,27 @@ legend {
 }
 
 /* Footer */
-footer{
+footer {
     background-color: #428636;
     padding: 30px 50px 0px 0px;
-    font-family: "Montserrat", sans-serif;
 }
-.container-footer{
+
+.container-footer {
     max-width: 1175px;
     margin: auto;
 }
-.row-footer{
+
+.row-footer {
     display: flex;
     justify-content: space-between;
 }
 
-.footer-col{
+.footer-col {
     width: 25%;
     padding: 0 15px;
 }
-.footer-col h4{
+
+.footer-col h4 {
     font-size: 18px;
     color: white;
     margin-bottom: 20px;
@@ -278,13 +280,16 @@ footer{
     position: relative;
     text-transform: uppercase;
 }
-.footer-col ul{
+
+.footer-col ul {
     list-style: none;
 }
-.footer-col ul li{
+
+.footer-col ul li {
     margin: 4px 0;
 }
-.footer-col ul li a{
+
+.footer-col ul li a {
     font-size: 15px;
     color: white;
     text-decoration: none;
@@ -293,13 +298,13 @@ footer{
     transition: all 0.3s ease;
 }
 
-.footer-col ul li a:hover{
+.footer-col ul li a:hover {
     color: #cecdcd;
     padding-left: 10px;
 }
 
 .midiasocial {
-    width: 130px;
+    width: 120px;
     cursor: pointer;
 }
 
@@ -315,7 +320,6 @@ footer{
     color: white;
     margin-top: 30px;
 }
-
 /* Responsivo */
 @media (max-width: 800px) {
     .footer-col{
