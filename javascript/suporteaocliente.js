@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('support-form');
 
     form.addEventListener('submit', function(event) {
-        event.preventDefault(); /
+        event.preventDefault(); // Evita o envio padrão do formulário
         const firstName = document.getElementById('first-name').value;
         const lastName = document.getElementById('last-name').value;
         const email = document.getElementById('email').value;
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('Email:', email);
         console.log('Mensagem:', message);
 
-        form.reset();
+        form.reset(); // Limpa o formulário após o envio
 
         alert('E-mail enviado com sucesso!');
     });
