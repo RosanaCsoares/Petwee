@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da Página -->
+    <title>Pet Wee - Petshop</title>
+
+    <!-- CSS Customizado -->
+    <link rel="stylesheet" href="./css/produtos.css">
+
+    <!-- Fontes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="topo">
+            <div class="logotipo">
+                <img src="/assets_home/pata.png" alt="logotipo1">
+                <img src="/assets_home/PetWee.png" alt="logotipo2">
+            <div class="pesquisa">
+                <input type="text" placeholder="O que o seu pet precisa?">
+                <button class="btn-1" type="submit">
+                    <img src="/assets_home/buscar.png" alt="buscar">
+                </button>
+            </div>
+        </div>
+        <div class="bth-button">
+            <button class="btn-login" onclick="mostrarAlertaLogin()">Login</button>
+            <button class="btn-cadastro" onclick="window.location.href='/Formulario.html'">Cadastro</button>
+        </div>
+    </div>
+
+    <script>
+        function mostrarAlertaLogin() {
+            alert("A página de Login está em desenvolvimento. Em breve estará disponível.");
+        }
+    </script>
+
+         <!-- Barra de navegação -->
+        <nav>
+            <div class="menuprincipal">
+                <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Produtos.html">Produtos</a></li>
+                <li><a href="Serviços.html">Serviços</a></li>
+                <li><a href="#" onclick="mostrarAlerta(event)">Meu carrinho</a></li> >
+                <li><a href="Suporteaocliente.html">Suporte ao cliente</a></li>
+            </ul>
+        </nav>
+
+        <script>
+            function mostrarAlerta(event) {
+                event.preventDefault(); 
+                alert("A página do meu carrinho está em desenvolvimento. Em breve estará disponível.");
+            }
+        </script>
+    </header>
+    
+    <!-- main -->
+    <div class="principal">
+    </div>
+    <main class="container my-5">
+        <div class="row">
+            <!-- Filtros -->
+            <aside class="col-md-3 mb-5">
+                <h5 class="mb-3 title-montserrat">Filtros</h5>
+                <div class="card p-3 mb-3">
+                    <h6 class="title-montserrat">Preço</h6>
+                    <input type="range" class="form-range custom-range" min="5" max="200" step="5" id="priceRange">
+                    <div class="d-flex justify-content-between">
+                        <span>R$30</span>
+                        <span>R$200</span>
+                    </div>
+                </div>
+
+                <div class="card p-3 mb-3">
+                    <h6 class="title-montserrat">Idade</h6>
+                    <div class="form-check custom-checkbox">
+                        <input class="form-check-input" type="checkbox" id="filhotes">
+                        <label class="form-check-label" for="filhotes">Filhotes</label>
+                    </div>
+                    <div class="form-check custom-checkbox">
+                        <input class="form-check-input" type="checkbox" id="adultos">
+                        <label class="form-check-label" for="adultos">Adultos</label>
+                    </div>
+                    <div class="form-check custom-checkbox">
+                        <input class="form-check-input" type="checkbox" id="idosos">
+                        <label class="form-check-label" for="idosos">Idosos</label>
+                    </div>
+                </div>
+
+                <div class="card p-3 mb-3">
+                    <h6 class="title-montserrat">Tamanho da Raça</h6>
+                    <div class="form-check custom-checkbox">
+                        <input class="form-check-input" type="checkbox" id="pequena">
+                        <label class="form-check-label" for="pequena">Pequena</label>
+                    </div>
+                    <div class="form-check custom-checkbox">
+                        <input class="form-check-input" type="checkbox" id="grande">
+                        <label class="form-check-label" for="grande">Grande</label>
+                    </div>
+                    <div class="form-check custom-checkbox">
+                        <input class="form-check-input" type="checkbox" id="media">
+                        <label class="form-check-label" for="media">Média</label>
+                    </div>
+                </div>
+
+                
+                <div class="card p-3 mb-3">
+                    <h6 class="title-montserrat">Tipo de Pet</h6>
+                    <div class="form-check custom-checkbox">
+                        <input class="form-check-input" type="checkbox" id="Gatos">
+                        <label class="form-check-label" for="Gatos">Gatos</label>
+                    </div>
+                    <div class="form-check custom-checkbox">
+                        <input class="form-check-input" type="checkbox" id="Cachorroe">
+                        <label class="form-check-label" for="Cachorros">Cachorros</label>
+                    </div>
+                </div>
+
+                <div class="card p-3">
+                    <h6 class="title-montserrat">Marcas</h6>
+                    <div class="form-check custom-checkbox">
+                        <input class="form-check-input" type="checkbox" id="Royal Canin">
+                        <label class="form-check-label" for="Royal Canin">Royal Canin</label>
+                    </div>
+                    <div class="form-check custom-checkbox">
+                        <input class="form-check-input" type="checkbox" id="Golden">
+                        <label class="form-check-label" for="Golden">Golden</label>
+                    </div>
+                    <div class="form-check custom-checkbox">
+                        <input class="form-check-input" type="checkbox" id="Fórmula Natural">
+                        <label class="form-check-label" for="Fórmula Natural">Fórmula Natural</label>
+                    </div>
+                </div>
+
+                <button class="btnbottom">Adicionar Filtro</button>
+            </aside>
+
+            <!-- Lista de Produtos -->
+            <div class="col-md-9">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h4 class="title-montserrat">Produtos mais comprados</h4>
+                    <div class="dropdown">
+                        <button class="btnpopular" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Filtrar por: Mais Comprados
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Mais Popular</a></li>
+                            <li><a class="dropdown-item" href="#">Menor Preço</a></li>
+                            <li><a class="dropdown-item" href="#">Maior Preço</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row justify-content-start">
+                    <div class="col-md-4 col-lg-3 mb-4">
+                        <div class="card product-card h-100">
+                            <a href="#">
+                                <div class="product-image-container">
+                                    <div class="badge-container">
+                                        <span class="badge bg-primary badge-new">Novo</span>
+                                        <span class="badge bg-danger badge-discount">-20%</span>
+                                    </div>
+                                    <img src="./assets_home/ração golden 01.jpg" class="product-img"
+                                        alt="Produto 2">
+                                </div>
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="#" class="product-link">
+                                    <h6 class="card-title">Ração Golden Fórmula Mini</h6>
+                                </a>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>15kg</span>
+                                </div>
+                                <h6 class="price"><s>R$166,89</s> <span class="text-danger">R$135,10</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 mb-4">
+                        <div class="card product-card h-100">
+                            <a href="#">
+                                <div class="product-image-container">
+                                    <div class="badge-container">
+                                        <span class="badge bg-primary badge-new">Novo</span>
+                                        <span class="badge bg-danger badge-discount">-10%</span>
+                                    </div>
+                                    <img src="/assets_home/ração royal canin 02.jpg" class="product-img"
+                                        alt="Produto 1">
+                                </div>
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="#" class="product-link">
+                                    <h6 class="card-title">Ração Seca Royal Canin</h6>
+                                </a>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>1kg</span>
+                                </div>
+                                <h6 class="price"><s>R$62,99</s> <span class="text-danger">R$42,99</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 mb-4">
+                        <div class="card product-card h-100">
+                            <a href="#">
+                                <div class="product-image-container">
+                                    <div class="badge-container">
+                                        <span class="badge bg-primary badge-new">Novo</span>
+                                        <span class="badge bg-danger badge-discount">-15%</span>
+                                    </div>
+                                    <img src="/assets_home/ração royal canin 03.jpg" class="product-img"
+                                        alt="Produto 2">
+                                </div>
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="#" class="product-link">
+                                    <h6 class="card-title">Ração Seca Royal Canin</h6>
+                                </a>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>1kg</span>
+                                </div>
+                                <h6 class="price"><s>R$65,99</s> <span class="text-danger">R$47,40</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 mb-4">
+                        <div class="card product-card h-100">
+                            <a href="#">
+                                <div class="product-image-container">
+                                    <div class="badge-container">
+                                        <span class="badge bg-primary badge-new">Novo</span>
+                                        <span class="badge bg-danger badge-discount">-5%</span>
+                                    </div>
+                                    <img src="/assets_home/Ração Golden Duii 04.jpg" class="product-img"
+                                        alt="Produto 2">
+                                </div>
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="#" class="product-link">
+                                    <h6 class="card-title">Ração Golden Duiis</h6>
+                                </a>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>10,1kg</span>
+                                </div>
+                                <h6 class="price"><s>R$174,90</s> <span class="text-danger">R$144,90</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 mb-4">
+                        <div class="card product-card h-100">
+                            <a href="#">
+                                <div class="product-image-container">
+                                    <div class="badge-container">
+                                        <span class="badge bg-primary badge-new">Novo</span>
+                                        <span class="badge bg-danger badge-discount">-3%</span>
+                                    </div>
+                                    <img src="/assets_home/Ração Golden para Gato 05.jpg" class="product-img"
+                                        alt="Produto 2">
+                                </div>
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="#" class="product-link">
+                                    <h6 class="card-title">Ração Golden para Gatos</h6>
+                                </a>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>1kg</span>
+                                </div>
+                                <h6 class="price"><s>R$30,49</s> <span class="text-danger">R$28,40</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 mb-4">
+                        <div class="card product-card h-100">
+                            <a href="#">
+                                <div class="product-image-container">
+                                    <div class="badge-container">
+                                        <span class="badge bg-primary badge-new">Novo</span>
+                                        <span class="badge bg-danger badge-discount">-15%</span>
+                                    </div>
+                                    <img src="/assets_home/Ração Royal Canin Bolas de Pelo 06.jpg" class="product-img"
+                                        alt="Produto 2">
+                                </div>
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="#" class="product-link">
+                                    <h6 class="card-title">Ração Royal Canin - Bolas de Pelo</h6>
+                                </a>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>400g</span>
+                                </div>
+                                <h6 class="price"><s>R$45,99</s> <span class="text-danger">R$39,90</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 mb-4">
+                        <div class="card product-card h-100">
+                            <a href="#">
+                                <div class="product-image-container">
+                                    <div class="badge-container">
+                                        <span class="badge bg-primary badge-new">Novo</span>
+                                        <span class="badge bg-danger badge-discount">-20%</span>
+                                    </div>
+                                    <img src="/assets_home/Ração Premier Seleção Natural 07.jpg" class="product-img"
+                                        alt="Produto 2">
+                                </div>
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="#" class="product-link">
+                                    <h6 class="card-title">Ração Premier Seleção Natural</h6>
+                                </a>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>1,5kg</span>
+                                </div>
+                                <h6 class="price"><s>R$82,90</s> <span class="text-danger">R$62,50</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 mb-4">
+                        <div class="card product-card h-100">
+                            <a href="#">
+                                <div class="product-image-container">
+                                    <div class="badge-container">
+                                        <span class="badge bg-primary badge-new">Novo</span>
+                                        <span class="badge bg-danger badge-discount">-3%</span>
+                                    </div>
+                                    <img src="/assets_home/Ração Premier Ambientes Internos 08.jpg" class="product-img"
+                                        alt="Produto 2">
+                                </div>
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="#" class="product-link">
+                                    <h6 class="card-title">Ração Premier Ambientes Internos</h6>
+                                </a>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>500g</span>
+                                </div>
+                                <h6 class="price"><s>R$29,89</s> <span class="text-danger">R$25,90</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 mb-4">
+                        <div class="card product-card h-100">
+                            <a href="#">
+                                <div class="product-image-container">
+                                    <div class="badge-container">
+                                        <span class="badge bg-primary badge-new">Novo</span>
+                                        <span class="badge bg-danger badge-discount">-10%</span>
+                                    </div>
+                                    <img src="/assets_home/Ração Úmida Golden Gourmet 09.jpg" class="product-img"
+                                        alt="Produto 2">
+                                </div>
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="#" class="product-link">
+                                    <h6 class="card-title">Ração Úmida Golden Gourmet</h6>
+                                </a>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>1un</span>
+                                </div>
+                                <h6 class="price"><s>R$3,99</s> <span class="text-danger">R$3,59</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 mb-4">
+                        <div class="card product-card h-100">
+                            <a href="#">
+                                <div class="product-image-container">
+                                    <div class="badge-container">
+                                        <span class="badge bg-primary badge-new">Novo</span>
+                                        <span class="badge bg-danger badge-discount">-2%</span>
+                                    </div>
+                                    <img src="/assets_home/Ração Úmida Royal Canin 10.jpg" class="product-img"
+                                        alt="Produto 2">
+                                </div>
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="#" class="product-link">
+                                    <h6 class="card-title">Ração Úmida Royal Canin</h6>
+                                </a>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>1un</span>
+                                </div>
+                                <h6 class="price"><s>R$12,99</s> <span class="text-danger">R$12,00</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 mb-4">
+                        <div class="card product-card h-100">
+                            <a href="#">
+                                <div class="product-image-container">
+                                    <div class="badge-container">
+                                        <span class="badge bg-primary badge-new">Novo</span>
+                                        <span class="badge bg-danger badge-discount">-5%</span>
+                                    </div>
+                                    <img src="/assets_home/Ração Úmida Golden Gourmet 11.jpg" class="product-img"
+                                        alt="Produto 2">
+                                </div>
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="#" class="product-link">
+                                    <h6 class="card-title">Ração Úmida Golden Gourmets</h6>
+                                </a>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>1un</span>
+                                </div>
+                                <h6 class="price"><s>R$3,69</s> <span class="text-danger">R$3,49</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 mb-4">
+                        <div class="card product-card h-100">
+                            <a href="#">
+                                <div class="product-image-container">
+                                    <div class="badge-container">
+                                        <span class="badge bg-primary badge-new">Novo</span>
+                                        <span class="badge bg-danger badge-discount">-20%</span>
+                                    </div>
+                                    <img src="/assets_home/Ração Úmida Premier Gourmet 12.jpg" class="product-img"
+                                        alt="Produto 2">
+                                </div>
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="#" class="product-link">
+                                    <h6 class="card-title">Ração Úmida Premier Gourmets</h6>
+                                </a>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>1un</span>
+                                </div>
+                                <h6 class="price"><s>R$8,49</s> <span class="text-danger">R$6,54</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paginação -->
+                <nav aria-label="Navegação">
+                    <ul class="pagination custom-pagination justify-content-center">
+                        <!-- Botão de voltar -->
+                        <li class="page-item">
+                            <a class="custom-page-link" href="#" aria-label="Anterior">
+                                <i class="fas fa-arrow-left"></i> Voltar
+                            </a>
+                        </li>
+
+                        <!-- Números das páginas -->
+                        <li class="page-item active"><a class="custom-page-number" href="#">1</a></li>
+                        <li class="page-item"><a class="custom-page-number" href="#">2</a></li>
+                        <li class="page-item"><a class="custom-page-number" href="#">3</a></li>
+                        <li class="page-item"><a class="custom-page-number" href="#">4</a></li>
+                        <li class="page-item"><a class="custom-page-number" href="#">5</a></li>
+
+                        <!-- Botão de avançar -->
+                        <li class="page-item">
+                            <a class="custom-page-link" href="#" aria-label="Próximo">
+                                Avançar <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </main>
+    
+    <!-- footer -->
+    <footer>
+        <div class="container-footer">
+            <div class="row-footer">
+                <div class="footer-col">
+                    <h4>Atendimento</h4>
+                    <ul>
+                        <li><a href="#">Ouvidoria </a></li>
+                        <li><a href=""> Perguntas frequentes </a></li>
+                        <li><a href=""> Central de atendimento </a></li>
+                        <li><a href=""> petwee@hotmail.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="#">Empresa</a></li>
+                        <li><a href="#">Sobre a Pet Wee</a></li>
+                        <li><a href="#">Endereço do local</a></li>
+                        <li><a href="#">Nossos diferenciais</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Política</h4>
+                    <ul>
+                        <li><a href="#">Política de compra</a></li>
+                        <li><a href="#">Política de entrega</a></li>
+                        <li><a href="#">Política de devolução</a></li>
+                        <li><a href="#">Política de privacidade</a></li>
+                    </ul>
+                </div>
+                <div class="medias-socias">
+                    <h4>Redes Sociais</h4>
+                    <img class="midiasocial" src="/assets_home/socialmedia.png" alt="logotiposdemidia">
+                    <p>Copyright© 2024 Rosana Soares</p>
+                    </div>
+
+                </div>
+                <!--end footer col-->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    

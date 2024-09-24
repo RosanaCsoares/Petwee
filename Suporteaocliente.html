@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da Página -->
+    <title>Pet Wee - Petshop</title>
+
+    <!-- CSS Customizado -->
+    <link rel="stylesheet" href="./css/suporteaocliente.css">
+
+    <!-- Fontes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="topo">
+            <div class="logotipo">
+                <img src="/assets_home/pata.png" alt="logotipo1">
+                <img src="/assets_home/PetWee.png" alt="logotipo2">
+            <div class="pesquisa">
+                <input type="text" placeholder="O que o seu pet precisa?">
+                <button class="btn-1" type="submit">
+                    <img src="/assets_home/buscar.png" alt="buscar">
+                </button>
+            </div>
+        </div>
+        <div class="bth-button">
+            <button class="btn-login" onclick="mostrarAlertaLogin()">Login</button>
+            <button class="btn-cadastro" onclick="window.location.href='/Formulario.html'">Cadastro</button>
+        </div>
+    </div>
+
+    <script>
+        function mostrarAlertaLogin() {
+            alert("A página de Login está em desenvolvimento. Em breve estará disponível.");
+        }
+    </script>
+
+         <!-- Barra de navegação -->
+        <nav>
+            <div class="menuprincipal">
+                <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Produtos.html">Produtos</a></li>
+                <li><a href="Serviços.html">Serviços</a></li>
+                <li><a href="#" onclick="mostrarAlerta(event)">Meu carrinho</a></li> 
+                <li><a href="Suporteaocliente.html">Suporte ao cliente</a></li>
+            </ul>
+        </nav>
+
+        <script>
+            function mostrarAlerta(event) {
+                event.preventDefault(); 
+                alert("A página do meu carrinho está em desenvolvimento. Em breve estará disponível.");
+            }
+        </script>
+
+        <div class="container12">
+            <div class="principal">
+                <div class="figura"> 
+                    <img src="./assets_home/variosanimaisjuntos.png" alt="Imagem de cachorro e gato" class="cachorroegato">
+                </div>
+                <div class="texto">
+                    <h1 class="titulo1">Bem-vindo ao Suporte ao cliente</h1>
+                    <h2 class="titulo2">Como podemos ajudá-lo?</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- main -->
+    <main>
+        <div class="container-support">
+            <!-- Formulário no lado esquerdo -->
+            <form id="support-form" class="support-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name">Primeiro nome</label>
+                        <input type="text" id="first-name" placeholder="Primeiro nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Último nome</label>
+                        <input type="text" id="last-name" placeholder="Último nome" required>
+                    </div>
+                </div>
+                
+                <label for="email">Endereço de Email</label>
+                <input type="email" id="email" placeholder="Endereço de E-mail" required>
+                
+                <label for="message">Escreva sua mensagem</label>
+                <textarea id="message" rows="4" placeholder="Sua mensagem.." required></textarea>
+                
+                <button type="submit" class="submit-btn">Enviar Mensagem</button>
+            </form>
+
+            <!-- Informações no lado direito -->
+            <div class="info-container">
+                <h2>Fale com a gente!</h2>
+                <p class="subtitle">Sua opinião é muito importante para nós! Se precisar de assistência ou <br>informações adicionais sobre nossos produtos e serviços, não hesite em nos <br> contatar. Estamos aqui para ajudar e garantir a melhor experiência possível.</p>
+                
+                <div class="contact-info">
+                    <div class="info-item">
+                        <img src="/assets_home/01localização.png" alt="Localização">
+                        <p>8592 Fairground St.Tallahassee, FL 32303</p>
+                    </div>
+                    <div class="info-item">
+                        <img src="/assets_home/02email.png" alt="Email">
+                        <p>exemplo@outlook.com</p>
+                    </div>
+                    <div class="info-item">
+                        <img src="/assets_home/03telefone.png" alt="Telefone">
+                        <p>+11 2378-6348</p>
+                    </div>
+                    <div class="info-item">
+                        <img src="/assets_home/04relogio.png" alt="Horário">
+                        <p>Manhã - Fri: 9AM - 10PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mapa abaixo -->
+        <div class="map-container">
+            <img src="/assets_home/Map+ pin.png" alt="Mapa">
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="container-footer">
+            <div class="row-footer">
+                <div class="footer-col">
+                    <h4>Atendimento</h4>
+                    <ul>
+                        <li><a href="#">Ouvidoria </a></li>
+                        <li><a href=""> Perguntas frequentes </a></li>
+                        <li><a href=""> Central de atendimento </a></li>
+                        <li><a href=""> petwee@hotmail.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="#">Empresa</a></li>
+                        <li><a href="#">Sobre a Pet Wee</a></li>
+                        <li><a href="#">Endereço do local</a></li>
+                        <li><a href="#">Nossos diferenciais</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Política</h4>
+                    <ul>
+                        <li><a href="#">Política de compra</a></li>
+                        <li><a href="#">Política de entrega</a></li>
+                        <li><a href="#">Política de devolução</a></li>
+                        <li><a href="#">Política de privacidade</a></li>
+                    </ul>
+                </div>
+                <div class="medias-socias">
+                    <h4>Redes Sociais</h4>
+                    <img class="midiasocial" src="/assets_home/socialmedia.png" alt="logotiposdemidia">
+                    <p>Copyright© 2024 Rosana Soares</p>
+                    </div>
+
+                </div>
+                <!--end footer col-->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <!-- JS para validação e envio de formulário -->
+    <script src="/Arquivos Javascript/suporteaocliente.js"></script>
+</body>
+</html>

@@ -1,0 +1,348 @@
+/*Header*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.topo {
+    display: flex;
+    background: linear-gradient(to right, #A3C756, #7A9A4A);
+    height: 85px; 
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 40px; 
+}
+
+/*Logo*/
+.logotipo {
+    display: flex; 
+    align-items: center; 
+}
+
+.logotipo img {
+    margin-right: 10px; 
+}
+
+/*Barra de pesquisa*/
+.pesquisa {
+    display: flex;
+    align-items: center;
+    background: #F8F9FA;
+    border-radius: 100px;
+    padding: 10px;
+    height: 40px;
+    margin-left: 20px; 
+}
+
+.pesquisa input {
+    background-color: #F8F9FA;
+    border: none;
+    width: 350px;
+    outline: none;
+}
+
+.pesquisa button {
+    background-color: #F8F9FA;
+    border: none;
+    margin-left: 5px;
+    cursor: pointer;    
+}
+
+.btn-1 {
+    width: 25px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.btn-login, .btn-cadastro {
+    display: inline-flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: transparent; 
+    color: #FFFFFF; 
+    height: 32px; 
+    width: 100px;
+    border-radius: 10%;
+    border: 2px solid #FFFFFF; 
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600; 
+    font-size: 14px; 
+    cursor: pointer; 
+    text-transform: uppercase; 
+    margin-left: 8px;
+}
+
+.btn-login:hover, .btn-cadastro:hover {
+    display: inline-flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: transparent; 
+    color: #FFC632;
+    height: 32px; 
+    width: 100px;
+    border-radius: 10%;
+    border: 2px solid #FFC632; 
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600; 
+    font-size: 14px; 
+    text-transform: uppercase; 
+    margin-left: 10px;
+}
+
+/*Menu*/
+.menuprincipal {
+    background-color: #428636;
+    display: flex; 
+    justify-content: flex-start; 
+    padding: 12px; 
+}
+
+.menu {
+    display: flex; 
+    justify-content: flex-start; 
+    margin: 0 auto; 
+    padding: 0; 
+    max-width: 1240px; 
+    flex-grow: 1; 
+
+}
+
+.menu li {
+    margin: 0 14px; 
+    font-size: 17px;
+    list-style-type: none;
+}
+
+.menu a {
+    color: #FFFFFF;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #A3C756;
+    text-decoration: none;
+}
+
+/*Imagem header*/
+.container12 {
+    background: linear-gradient(to bottom, rgb(255, 184, 20) 10%, #F9E539);
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center; 
+    height: 330px; 
+}
+
+.principal {
+    display: flex; 
+    gap: 60px; 
+}
+
+.cachorroegato {
+    width: 480px; 
+    height: auto;
+    margin-top: 45px; 
+}
+
+/* Título 1 */
+.titulo1 {
+    color: rgba(0, 0, 0, 0.75);
+    font-weight: 800;
+    font-size: 50px;
+    white-space: nowrap; 
+    margin-top: 30px;
+}
+
+/* Título 2 */
+.titulo2 {
+    color: rgba(0, 0, 0, 0.75); 
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0; 
+    margin-top: 20px; 
+}
+
+/* Video na página */
+.video {
+    max-width: 470px;
+    border-radius: 20px;
+}
+
+/* Responsividade para vídeo */
+@media (max-width: 1200px) {
+    .video {
+        margin: 20px 20px 0 20px; /* Ajusta a margem para dispositivos menores */
+    }
+}
+
+@media (max-width: 800px) {
+    .video {
+        margin: 20px auto; /* Centraliza o vídeo horizontalmente em telas menores */
+        max-width: 90%; /* Ajusta a largura máxima para 90% da tela */
+    }
+}
+
+@media (max-width: 600px) {
+    .video {
+        margin: 20px auto; /* Mantém o vídeo centralizado */
+        max-width: 100%; /* Ajusta a largura máxima para 100% da tela */
+    }
+}
+
+/* main */
+main {
+    background-color: #f1f0f0;
+    padding: 20px;
+    margin: 20px auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: "Montserrat", sans-serif; 
+}
+
+main h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+main label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+main input, main select, main textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+main input[type="radio"] {
+    width: 15px; 
+    height: 15px; 
+    margin-right: 3px;
+    vertical-align: center;
+}
+
+main .telebusca-options {
+    display: flex;
+    align-items: center;
+}
+
+main .telebusca-options label {
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+main button {
+    width: 100%;
+    background-color: #FFC632;
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+main button:hover {
+    background-color: #529F44;
+    color: rgb(255, 255, 255);
+}
+
+/* Footer */
+footer {
+    background-color: #428636;
+    padding: 30px 50px 0px 0px;
+}
+
+.container-footer {
+    max-width: 1175px;
+    margin: auto;
+}
+
+.row-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin: 4px 0;
+}
+
+.footer-col ul li a {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #cecdcd;
+    padding-left: 10px;
+}
+
+.midiasocial {
+    width: 120px;
+    cursor: pointer;
+}
+
+.medias-socias h4 {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.medias-socias p {
+    font-size: 10px;
+    color: white;
+    margin-top: 30px;
+}
+/* Responsivo */
+@media (max-width: 800px) {
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:600px) {
+    .footer-col{
+        width: 100%;
+    }
+}
+

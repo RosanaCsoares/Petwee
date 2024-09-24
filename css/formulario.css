@@ -1,0 +1,330 @@
+/*Header*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.topo {
+    display: flex;
+    background: linear-gradient(to right, #A3C756, #7A9A4A);
+    height: 85px; 
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 40px; 
+}
+
+/*Logo*/
+.logotipo {
+    display: flex; 
+    align-items: center; 
+}
+
+.logotipo img {
+    margin-right: 10px; 
+}
+
+/*Barra de pesquisa*/
+.pesquisa {
+    display: flex;
+    align-items: center;
+    background: #F8F9FA;
+    border-radius: 100px;
+    padding: 10px;
+    height: 40px;
+    margin-left: 20px; 
+}
+
+.pesquisa input {
+    background-color: #F8F9FA;
+    border: none;
+    width: 350px;
+    outline: none;
+}
+
+.pesquisa button {
+    background-color: #F8F9FA;
+    border: none;
+    margin-left: 5px;
+    cursor: pointer;    
+}
+
+.btn-1 {
+    width: 25px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.btn-login, .btn-cadastro {
+    display: inline-flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: transparent; 
+    color: #FFFFFF; 
+    height: 32px; 
+    width: 100px;
+    border-radius: 10%;
+    border: 2px solid #FFFFFF; 
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600; 
+    font-size: 14px; 
+    cursor: pointer; 
+    text-transform: uppercase; 
+    margin-left: 8px;
+}
+
+.btn-login:hover, .btn-cadastro:hover {
+    display: inline-flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: transparent; 
+    color: #FFC632;
+    height: 32px; 
+    width: 100px;
+    border-radius: 10%;
+    border: 2px solid #FFC632; 
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600; 
+    font-size: 14px; 
+    text-transform: uppercase; 
+    margin-left: 10px;
+}
+
+
+/*Menu*/
+.menuprincipal {
+    background-color: #428636;
+    display: flex;
+    justify-content: flex-start; 
+    padding: 12px; 
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-start; 
+    margin: 0 auto;
+    padding: 0; 
+    max-width: 1240px; 
+    flex-grow: 1; 
+}
+
+.menu li {
+    margin: 0 14px;
+    font-size: 17px;
+    list-style-type: none;
+}
+
+.menu a {
+    color: #FFFFFF;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #A3C756;
+    text-decoration: none;
+}
+
+/*Imagem header*/
+.principal {
+    background: linear-gradient(to bottom, rgb(255, 184, 20) 10%, #F9E539);
+    position: relative;
+    padding-bottom: 330px; 
+}
+
+.dog {
+    position: absolute;
+    top: 84%;
+    right: 700px;
+}
+
+.form-background {
+    background-color: #FFC632; 
+    padding: 30px; 
+}
+
+/* Formulário */
+.form-container {
+    max-width: 700px; 
+    margin: 30px auto;
+    background-color: #f1f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: "Montserrat", sans-serif;
+    margin-top: -250px;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+legend {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus, .form-group select:focus {
+    border-color: #243d0c;
+    outline: none;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-group button {
+    background-color: #FFC632;
+    color: #000000;
+    outline: none;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    height: 40px
+}
+
+.button-group button:hover {
+    background-color: #529F44;
+    color: white;
+}
+
+.button-group button:nth-of-type(2) {
+    background-color: #FFC632;
+    outline: none;
+    width: 120px;
+}
+
+.button-group button:nth-of-type(2):hover {
+    background-color: #529F44;
+    color: white;
+}
+
+.button-group p {
+    font-size: 13px;
+    margin-right: 70px;
+}
+
+.termos-condicoes {
+    color: #529F44; 
+    font-weight: bold;
+    position: relative;
+}
+
+/* Footer */
+footer{
+    background-color: #428636;
+    padding: 30px 50px 0px 0px;
+    font-family: "Montserrat", sans-serif;
+}
+.container-footer{
+    max-width: 1175px;
+    margin: auto;
+}
+.row-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+.footer-col ul{
+    list-style: none;
+}
+.footer-col ul li{
+    margin: 4px 0;
+}
+.footer-col ul li a{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #cecdcd;
+    padding-left: 10px;
+}
+
+.midiasocial {
+    width: 130px;
+    cursor: pointer;
+}
+
+.medias-socias h4 {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.medias-socias p {
+    font-size: 10px;
+    color: white;
+    margin-top: 30px;
+}
+
+/* Responsivo */
+@media (max-width: 800px) {
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:600px) {
+    .footer-col{
+        width: 100%;
+    }
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da Página -->
+    <title>Pet Wee - Petshop</title>
+
+    <!-- CSS Customizado -->
+    <link rel="stylesheet" href="./css/veterinarioconsulta.css">
+
+    <!-- Fontes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="topo">
+            <div class="logotipo">
+                <img src="/assets_home/pata.png" alt="logotipo1">
+                <img src="/assets_home/PetWee.png" alt="logotipo2">
+            <div class="pesquisa">
+                <input type="text" placeholder="O que o seu pet precisa?">
+                <button class="btn-1" type="submit">
+                    <img src="/assets_home/buscar.png" alt="buscar">
+                </button>
+            </div>
+        </div>
+        <div class="bth-button">
+            <button class="btn-login" onclick="mostrarAlertaLogin()">Login</button>
+            <button class="btn-cadastro" onclick="window.location.href='/Formulario.html'">Cadastro</button>
+        </div>
+    </div>
+
+    <script>
+        function mostrarAlertaLogin() {
+            alert("A página de Login está em desenvolvimento. Em breve estará disponível.");
+        }
+    </script>
+
+         <!-- Barra de navegação -->
+        <nav>
+            <div class="menuprincipal">
+                <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Produtos.html">Produtos</a></li>
+                <li><a href="Serviços.html">Serviços</a></li>
+                <li><a href="#" onclick="mostrarAlerta(event)">Meu carrinho</a></li> 
+                <li><a href="Suporteaocliente.html">Suporte ao cliente</a></li>
+            </ul>
+        </nav>
+
+        <script>
+            function mostrarAlerta(event) {
+                event.preventDefault(); 
+                alert("A página do meu carrinho está em desenvolvimento. Em breve estará disponível.");
+            }
+        </script>
+
+        <div class="container12">
+            <div class="principal">
+                <video class="video" autoplay muted>
+                    <source src="./videos/consultaveterinara.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo MP4.
+                </video>
+                <div class="texto">
+                    <h1 class="titulo1">Veterinário - Consulta</h1>
+                    <h2 class="titulo2">Ofereça ao seu pet uma consulta veterinária atenciosa, com cuidados especiais.<br>A saúde do seu amigo com um atendimento dedicado e personalizado.<br>Agende uma consulta e cuide do bem-estar do seu pet!!</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main>
+        <div class="form-container">
+            <div class="form-content">
+                <h2>Agendamento de Consulta</h2>
+                
+                <label for="pet">Seleção de pet:</label>
+                <select id="pet" name="pet">
+                    <option value="nome">Milla</option>
+                    <option value="nome">Lucy</option>
+                    <option value="nome">Brad</option>
+                    <option value="nome">Sammy</option>
+                </select>
+            
+                <label for="observacoes">Observações:</label>
+                <textarea id="observacoes" name="observacoes" rows="4" placeholder="Informe os detalhes importantes do seu pet."></textarea>
+            
+                <label for="nome-tutor">Nome completo do tutor:</label>
+                <input type="text" id="nome-tutor" name="nome-tutor">
+            
+                <label for="data">Data do agendamento:</label>
+                <input type="date" id="data" name="data">
+            
+                <label for="hora">Hora do agendamento:</label>
+                <input type="time" id="hora" name="hora">
+            
+                <div class="atendimento-urgente">
+                    <input type="checkbox" id="atendimento-urgente" name="atendimento-urgente">
+                    <label for="atendimento-urgente">Atendimento urgente</label>
+                </div>
+            
+                <button id="agendar">Agendar</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="container-footer">
+            <div class="row-footer">
+                <div class="footer-col">
+                    <h4>Atendimento</h4>
+                    <ul>
+                        <li><a href="#">Ouvidoria</a></li>
+                        <li><a href="#">Perguntas frequentes</a></li>
+                        <li><a href="#">Central de atendimento</a></li>
+                        <li><a href="#">petwee@hotmail.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="#">Empresa</a></li>
+                        <li><a href="#">Sobre a Pet Wee</a></li>
+                        <li><a href="#">Endereço do local</a></li>
+                        <li><a href="#">Nossos diferenciais</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Política</h4>
+                    <ul>
+                        <li><a href="#">Política de compra</a></li>
+                        <li><a href="#">Política de entrega</a></li>
+                        <li><a href="#">Política de devolução</a></li>
+                        <li><a href="#">Política de privacidade</a></li>
+                    </ul>
+                </div>
+                <div class="medias-sociais">
+                    <h4>Redes Sociais</h4>
+                    <img class="midiasocial" src="/assets_home/socialmedia.png" alt="logotiposdemidia">
+                    <p>Copyright© 2024 Rosana Soares</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/Js5ZW7Y3F6E7E9yZ5zD/i7X8a0S5xkV5X0G6B8" crossorigin="anonymous"></script>
+
+    <!-- JavaScript Externo -->
+    <script src="./javascript/veterinarioconsulta.js"></script>
+</body>
+</html>

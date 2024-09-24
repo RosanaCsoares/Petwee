@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da Página -->
+    <title>Pet Wee - Petshop</title>
+
+    <!-- CSS Customizado -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Fontes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="topo">
+            <div class="logotipo">
+                <img src="/assets_home/pata.png" alt="logotipo1">
+                <img src="/assets_home/PetWee.png" alt="logotipo2">
+            <div class="pesquisa">
+                <input type="text" placeholder="O que o seu pet precisa?">
+                <button class="btn-1" type="submit">
+                    <img src="/assets_home/buscar.png" alt="buscar">
+                </button>
+            </div>
+        </div>
+            <div class="bth-button">
+                <button class="btn-login" onclick="mostrarAlertaLogin()">Login</button>
+                <button class="btn-cadastro" onclick="window.location.href='/Formulario.html'">Cadastro</button>
+            </div>
+        </div>
+
+        <script>
+            function mostrarAlertaLogin() {
+                alert("A página de Login está em desenvolvimento. Em breve estará disponível.");
+            }
+        </script>
+        
+        <!-- Barra de navegação -->
+        <nav>
+            <div class="menuprincipal">
+                <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Produtos.html">Produtos</a></li>
+                <li><a href="Serviços.html">Serviços</a></li>
+                <li><a href="#" onclick="mostrarAlerta(event)">Meu carrinho</a></li>
+                <li><a href="Suporteaocliente.html">Suporte ao cliente</a></li>
+            </ul>
+        </nav>
+
+        <script>
+            function mostrarAlerta(event) {
+                event.preventDefault(); 
+                alert("A página do meu carrinho está em desenvolvimento. Em breve estará disponível.");
+            }
+        </script>
+
+        <div class="container12">
+            <div class="principal">
+                <div class="quadrado">
+                    <h1 class="titulo1">Bem Vindo à Pet Wee</h1>
+                    <h2 class="titulo2">Aqui, você encontra tudo o que seu pet<br>precisa: alimentação, acessórios,<br>produtos de saúde e muito mais!</h2>
+                    <button class="btn-2" onclick="window.location.href='Serviços.html'">Conferir</button>
+                </div>
+                <div class="figura"> 
+                    <img src="/assets_home/cachorroegato.png" alt="Imagem de cachorro e gato" class="cachorroegato">
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- section -->
+    <section id="slider">
+        <h2 class="carousel-title">Ofertas para Cachorros</h2>
+        <div id="carouselCachorro" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Primeira parte do carrossel (cachorro) -->
+                <div class="carousel-item active">
+                    <div class="product-row">
+                        <div class="product-item">
+                            <img src="/assets_home/image1.png" alt="Ração Golden">
+                            <div class="product-description">
+                                <h3>Ração Golden</h3>
+                                <p>R$ 46,00</p>
+                                <p>Desconto: 6%</p>
+                                <p>Peso: 1kg</p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="/assets_home/image2.png" alt="Sabonete de Coco">
+                            <div class="product-description">
+                                <h3>Sabonete de Coco</h3>
+                                <p>R$ 12,99</p>
+                                <p>Desconto: 2%</p>
+                                <p>Peso: 80g</p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="/assets_home/image3.png" alt="Sashe Plus">
+                            <div class="product-description">
+                                <h3>Sashe Plus</h3>
+                                <p>R$ 2,80</p>
+                                <p>Desconto: 1%</p>
+                                <p>Peso: 100g</p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="/assets_home/image4.png" alt="Ração Fórmula Natural">
+                            <div class="product-description">
+                                <h3>Ração Fórmula Natural</h3>
+                                <p>R$ 54,00</p>
+                                <p>Desconto: 12%</p>
+                                <p>Peso: 1kg</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Segunda parte do carrossel (Cachorro) -->
+                <div class="carousel-item">
+                    <div class="product-row">
+                        <div class="product-item">
+                            <img src="/assets_home/image5.jpg" alt="Brinquedo Frisbee">
+                            <div class="product-description">
+                                <h3>Brinquedo Frisbee</h3>
+                                <p>R$ 36,99</p>
+                                <p>Desconto: 7%</p>
+                                <p>Tamanho: M</p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="/assets_home/image6.jpg" alt="Coleira Azul">
+                            <div class="product-description">
+                                <h3>Coleira Azul</h3>
+                                <p>R$ 74,00</p>
+                                <p>Desconto: 9%</p>
+                                <p>Tamanho: M</p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="/assets_home/imaeg7.jpg" alt="Petisco Bifinhos">
+                            <div class="product-description">
+                                <h3>Petisco Bifinhos</h3>
+                                <p>R$ 7,69</p>
+                                <p>Desconto: 6%</p>
+                                <p>Peso: 65g</p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="/assets_home/image8.jpg" alt="Ração Seca Royal Canin">
+                            <div class="product-description">
+                                <h3>Ração Royal Canin</h3>
+                                <p>R$ 390,00</p>
+                                <p>Desconto: 15%</p>
+                                <p>Peso: 15kg</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Setas de navegação -->
+            <a class="carousel-control-prev" href="#carouselCachorro" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselCachorro" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>        
+    </section>
+    
+    <section id="slider">
+        <h2 class="carousel-title">Ofertas para Gatos</h2>
+        <div id="carouselGatos" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Primeira parte do carrossel (Gatos)-->
+                <div class="carousel-item active">
+                    <div class="product-row">
+                        <div class="product-item">
+                            <img src="/assets_home/image9.jpg" alt="Ração Golden">
+                            <div class="product-description">
+                                <h3>Ração Golden</h3>
+                                <p>R$ 30,49</p>
+                                <p>Desconto: 5%</p>
+                                <p>Peso: 1kg</p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="/assets_home/image10.jpg" alt="Petisco Dreamies">
+                            <div class="product-description">
+                                <h3>Petisco Dreamies</h3>
+                                <p>R$ 7,49</p>
+                                <p>Desconto: 4%</p>
+                                <p>Peso: 40g</p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="/assets_home/image11.jpg" alt="Areia Higiênica">
+                            <div class="product-description">
+                                <h3>Areia Higiênica</h3>
+                                <p>R$ 55,90</p>
+                                <p>Desconto: 8%</p>
+                                <p>Peso: 4kg</p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="/assets_home/image12.jpg" alt="Ração Úmida Premier">
+                            <div class="product-description">
+                                <h3>Ração Úmida Premier</h3>
+                                <p>R$ 7,99</p>
+                                <p>Desconto: 2%</p>
+                                <p>Peso: 70g</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Segunda parte do carrossel (Gatos) -->
+                <div class="carousel-item">
+                    <div class="product-row">
+                        <div class="product-item">
+                            <img src="/assets_home/image13.jpg" alt="Snack Petitos ">
+                            <div class="product-description">
+                                <h3>Snack Petitos </h3>
+                                <p>R$ 3,10</p>
+                                <p>Desconto: 6%</p>
+                                <p>Peso: 30g</p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="/assets_home/image14.jpg" alt="Arranhador Pet">
+                            <div class="product-description">
+                                <h3>Arranhador Pet</h3>
+                                <p>R$ 142,10</p>
+                                <p>Desconto: 9%</p>
+                                <p>Unidade: 1un</p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="/assets_home/image15.jpg" alt="Comedouro Spike">
+                            <div class="product-description">
+                                <h3>Comedouro Spike</h3>
+                                <p>R$ 11,00</p>
+                                <p>Desconto: 2%</p>
+                                <p>Tamanho: 300ml</p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="/assets_home/image16.jpg" alt="Coleira Azul">
+                            <div class="product-description">
+                                <h3>Coleira Azul</h3>
+                                <p>R$ 18,10</p>
+                                <p>Desconto: 10%</p>
+                                <p>Tamanho: M</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Setas de navegação -->
+            <a class="carousel-control-prev" href="#carouselGatos" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselGatos" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+            <section class="marcas-description">
+                <h3>Principais Marcas</h3>
+                <img class="marcasproducts" src="/assets_home/marcas.png" alt="Marcas de produtos">
+            </section>
+        </div>        
+    </section>
+    
+
+    <!-- footer-->
+    <footer>
+        <div class="container-footer">
+            <div class="row-footer">
+                <div class="footer-col">
+                    <h4>Atendimento</h4>
+                    <ul>
+                        <li><a href="#">Ouvidoria </a></li>
+                        <li><a href=""> Perguntas frequentes </a></li>
+                        <li><a href=""> Central de atendimento </a></li>
+                        <li><a href=""> petwee@hotmail.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="#">Empresa</a></li>
+                        <li><a href="#">Sobre a Pet Wee</a></li>
+                        <li><a href="#">Endereço do local</a></li>
+                        <li><a href="#">Nossos diferenciais</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Política</h4>
+                    <ul>
+                        <li><a href="#">Política de compra</a></li>
+                        <li><a href="#">Política de entrega</a></li>
+                        <li><a href="#">Política de devolução</a></li>
+                        <li><a href="#">Política de privacidade</a></li>
+                    </ul>
+                </div>
+                <div class="medias-socias">
+                    <h4>Redes Sociais</h4>
+                    <img class="midiasocial" src="/assets_home/socialmedia.png" alt="logotiposdemidia">
+                    <p>Copyright© 2024 Rosana Soares</p>
+                    </div>
+
+                </div>
+                <!--end footer col-->
+            </div>
+        </div>
+    </footer>
+
+ <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
